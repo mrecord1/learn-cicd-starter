@@ -8,9 +8,9 @@ import (
 
 var ErrNoAuthHeaderIncluded = errors.New("no authorization header included")
 
-// GetAPIKey -
+// To Do: Build unit test
 func GetAPIKey(headers http.Header) (string, error) {
-	authHeader := headers.Get("Authorization")
+	authHeader := headers.Get("uthorization")
 	if authHeader == "" {
 		return "", ErrNoAuthHeaderIncluded
 	}
