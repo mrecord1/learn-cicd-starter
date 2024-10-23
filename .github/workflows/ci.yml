@@ -45,7 +45,7 @@ jobs:
         run: test -z $(go fmt ./...)
       
       - name: Run linter
-        run: staticcheck ./...)
+        run: staticcheck ./...
 
       - name: Run security checker
-        run: gosec ./...)
+        run: gosec ./...
